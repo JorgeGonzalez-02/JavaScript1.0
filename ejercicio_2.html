@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio_2</title>
+</head>
+<body>
+    
+    <script>
+    var sueldo,horasT,valorH,comsion,porcentaje,subTransporte=97032;
+    horasT=parseInt(prompt("horas trabajadas: "));
+    valorH=parseFloat(prompt("valor de la hora:"));
+    comsion=parseFloat(prompt("valor de las ventas:"));
+    porcentaje=parseFloat(prompt("Digite el porcentaje:"));
+
+    comision=comsion*(porcentaje/100);
+    sueldo=horasT*valorH+comision;
+    if (sueldo<=828116) {
+        document.write("sueldo: "+(sueldo+subTransporte));
+    } else {
+        document.write("sueldo: "+sueldo);
+    }
+    
+    </script>
+
+</body>
+</html>
